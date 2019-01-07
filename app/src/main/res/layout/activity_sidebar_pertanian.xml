@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/bagfragdas"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-    <include layout="@layout/toolbarpertanian"/>
 
 
     <RelativeLayout
@@ -136,15 +134,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="130dp"
         android:layout_marginEnd="5pt"
         android:background="@color/putih">
 
         <LinearLayout
             android:layout_width="8pt"
             android:layout_height="99dp"
-            android:background="@color/yellow">
-        </LinearLayout>
+            android:background="@color/yellow"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -168,11 +165,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="textEnd"
                 android:layout_gravity="end"
                 android:layout_marginLeft="8pt"
                 android:paddingTop="15dp"
                 android:text="3 Desa,4 Pemilik"
+                android:textAlignment="textEnd"
                 android:textColor="@color/bfont"
                 android:textSize="14sp" />
 
@@ -196,6 +193,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/bfont"
                 android:textSize="14sp" />
+
             <TextView
                 android:layout_width="5pt"
                 android:layout_height="wrap_content"
@@ -203,8 +201,7 @@
                 android:text=":"
                 android:textAllCaps="false"
                 android:textColor="@color/bfont"
-                android:textSize="14sp"
-                />
+                android:textSize="14sp" />
 
 
             <TextView
@@ -253,17 +250,17 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="241dp"
         android:layout_marginEnd="5pt"
+        android:layout_marginBottom="223dp"
         android:background="@color/putih">
 
         <LinearLayout
             android:layout_width="8pt"
             android:layout_height="99dp"
-            android:background="@color/green">
-        </LinearLayout>
+            android:background="@color/green"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -271,7 +268,9 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="8pt">
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="0dp">
 
             <TextView
                 android:layout_width="70pt"
@@ -287,11 +286,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="textEnd"
                 android:layout_gravity="end"
                 android:layout_marginLeft="8pt"
                 android:paddingTop="15dp"
                 android:text="3 Desa,5 Pemilik"
+                android:textAlignment="textEnd"
                 android:textColor="@color/bfont"
                 android:textSize="14sp" />
 
@@ -315,6 +314,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/bfont"
                 android:textSize="14sp" />
+
             <TextView
                 android:layout_width="5pt"
                 android:layout_height="wrap_content"
@@ -322,8 +322,7 @@
                 android:text=":"
                 android:textAllCaps="false"
                 android:textColor="@color/bfont"
-                android:textSize="14sp"
-                />
+                android:textSize="14sp" />
 
 
             <TextView
@@ -372,8 +371,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="355dp"
         android:layout_marginEnd="5pt"
         android:layout_marginBottom="61dp"
         android:background="@color/putih">
@@ -381,8 +381,7 @@
         <LinearLayout
             android:layout_width="8pt"
             android:layout_height="99dp"
-            android:background="@color/darkgreen">
-        </LinearLayout>
+            android:background="@color/darkgreen"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -406,12 +405,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="textEnd"
                 android:layout_gravity="end"
-                android:layout_marginLeft="8pt"
                 android:layout_marginStart="8pt"
+                android:layout_marginLeft="8pt"
                 android:paddingTop="15dp"
                 android:text="2 Desa,3 Pemilik"
+                android:textAlignment="textEnd"
                 android:textColor="@color/bfont"
                 android:textSize="14sp" />
 
@@ -443,8 +442,7 @@
                 android:text=":"
                 android:textAllCaps="false"
                 android:textColor="@color/bfont"
-                android:textSize="14sp"
-                />
+                android:textSize="14sp" />
 
 
             <TextView
@@ -492,4 +490,4 @@
 
 
 
-</LinearLayout>
+</RelativeLayout>

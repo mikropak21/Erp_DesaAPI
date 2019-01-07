@@ -19,7 +19,7 @@ public class Sidebar_Dasboard_Fragment extends Fragment {
         btnopen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent  intent  =   new Intent(getActivity(), Detail_pemilik.class);
+                Intent  intent  =   new Intent(getActivity(), Sidebar_Pertanian.class);
                 intent.putExtra("some", "some data");
                 startActivity(intent);
             }
