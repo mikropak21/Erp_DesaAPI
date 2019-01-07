@@ -31,7 +31,7 @@ public class Pertanian_Detailpadi extends AppCompatActivity
     public void bukaPemilik(){
 
         // Memasukan konten dan fungsion yang berapa pada mainactivity3
-        Intent pemilik1 = new Intent(getApplicationContext(),Detail_pemilik.class);
+        Intent pemilik1 = new Intent(getApplicationContext(),DetailPemilik.class);
         startActivity(pemilik1);
     }
 }

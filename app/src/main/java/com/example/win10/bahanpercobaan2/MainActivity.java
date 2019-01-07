@@ -1,12 +1,7 @@
 package com.example.win10.bahanpercobaan2;
 
-import android.content.Intent;
-import android.graphics.PorterDuff;
-import android.graphics.drawable.ColorDrawable;
 import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -15,8 +10,6 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
@@ -48,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new Sidebar_Dasboard_Fragment()).commit();
+                    new FragmentDashboard()).commit();
 
             // Membuat halaman pertama yang dibuka adalah nav_dasbor
             navigationView.setCheckedItem(R.id.nav_dasbor);
@@ -66,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_dasbor:
 
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new Sidebar_Dasboard_Fragment()).commit();
+                        new FragmentDashboard()).commit();
                 break;
 
             /*case R.id.nav_pertanian:
@@ -76,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             case R.id.nav_pertanian:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new Sidebar_Pertanian_Fragment()).commit();
+                        new FragmentPertanian()).commit();
                 break;
 
             /*case R.id.nav_perkebunan:

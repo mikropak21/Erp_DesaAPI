@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.NoActionBar"/>
 
-    <include    layout="@layout/pertanian_detailpadi">
+    <include    layout="@layout/detailpadi">
     </include>
 
     <android.support.design.widget.FloatingActionButton
