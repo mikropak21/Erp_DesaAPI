@@ -14,7 +14,7 @@ public class Pertanian_Detailpadi extends AppCompatActivity
         super.onCreate(savedInstanceState);
 
         // Akan menampilkan page/layout activity_main3
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.pagepadi);
 
         // Value pemilik1 yang berisi id    = pemilik1
         pemilik1 =(RelativeLayout) findViewById(R.id.pemilik1);

@@ -11,7 +11,7 @@ public class DetailPemilik extends AppCompatActivity
         super.onCreate(savedInstanceState);
 
         // Akan menampilkan page/layout pada activity_main4
-        setContentView(R.layout.activity_main4);
+        setContentView(R.layout.pagepemilik);
 
         Bundle bundle   =   getIntent().getExtras();
         if (bundle  !=  null)
