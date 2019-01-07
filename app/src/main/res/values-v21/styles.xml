@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item   name="windowActionBar">false</item>
+        <item   name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+    // Style untuk toolbar
+    <style name="ToolTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/putih</item>
+        <item name="android:textColorSecondary">@color/putih</item>
+        <item name="android:textColorPrimaryInverse">@color/putih</item>
+        <item name="android:textSize">20sp</item>
+        // function untuk mewarnai homeasup menjadi putih
+        <item name="android:homeAsUpIndicator">@color/putih</item>
+        <item name="colorPrimary">#F5560A</item>
+    </style>
+</resources>

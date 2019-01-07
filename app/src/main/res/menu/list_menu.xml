@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dasbor"
+            android:icon="@mipmap/pic_dasbor"
+            android:title="Dashboard"
+            />
+        <item
+            android:id="@+id/nav_pertanian"
+            android:icon="@mipmap/pic_pertanian"
+            android:title="Pertanian"
+            />
+        <item
+            android:id="@+id/nav_perkebunan"
+            android:icon="@mipmap/pic_perkebunan"
+            android:title="Perkebunan"
+            />
+        <item
+            android:id="@+id/nav_perhutanan"
+            android:icon="@mipmap/pic_perhutanan"
+            android:title="Perhutanan"
+            />
+        <item
+            android:id="@+id/nav_peternakan"
+            android:icon="@mipmap/pic_peternakan"
+            android:title="Peternakan"
+            />
+        <item
+            android:id="@+id/nav_pemiliklahan"
+            android:icon="@mipmap/pic_pemilik_lahan"
+            android:title="Pemilik Lahan"
+            />
+        <item
+            android:id="@+id/nav_desa"
+            android:icon="@mipmap/pic_desa"
+            android:title="Desa"
+            />
+        <item
+            android:id="@+id/nav_peta"
+            android:icon="@mipmap/pic_peta"
+            android:title="Peta"
+            />
+    </group>
+
+    <item>
+        <menu>
+            <item
+                android:id="@+id/nav_video"
+                android:icon="@drawable/ic_new_releases_black_24dp"
+                android:title="Pengaturan"
+                />
+            <item
+                android:id="@+id/nav_shopping"
+                android:icon="@drawable/ic_help_outline_black_24dp"
+                android:title="Bantuan"
+                />
+        </menu>
+    </item>
+
+</menu>
