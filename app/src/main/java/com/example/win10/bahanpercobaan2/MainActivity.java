@@ -69,15 +69,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         new Sidebar_Dasboard_Fragment()).commit();
                 break;
 
-            case R.id.nav_pertanian:
+            /*case R.id.nav_pertanian:
                 Intent page2 = new Intent(getApplicationContext(),Sidebar_Pertanian.class);
                 startActivity(page2);
-                break;
+                break;*/
 
-            /*case R.id.nav_pertanian:
+            case R.id.nav_pertanian:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new Sidebar_Pertanian_Fragment()).commit();
-                break;*/
+                break;
 
             /*case R.id.nav_perkebunan:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
