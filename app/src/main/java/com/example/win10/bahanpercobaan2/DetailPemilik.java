@@ -4,14 +4,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
-public class Detail_pemilik extends AppCompatActivity
+public class DetailPemilik extends AppCompatActivity
 {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Akan menampilkan page/layout pada activity_main4
-        setContentView(R.layout.activity_main4);
+        setContentView(R.layout.pagepemilik);
 
         Bundle bundle   =   getIntent().getExtras();
         if (bundle  !=  null)

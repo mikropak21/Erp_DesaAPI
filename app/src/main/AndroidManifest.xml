@@ -21,7 +21,7 @@
 
         <activity android:name=".Sidebar_Pertanian"/>
         <activity android:name=".Pertanian_Detailpadi"/>
-        <activity android:name=".Detail_pemilik"/>
+        <activity android:name=".DetailPemilik"/>
         <activity android:name=".TambahActivity"/>
     </application>
 
