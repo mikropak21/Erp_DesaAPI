@@ -1,22 +1,50 @@
 package com.example.win10.bahanpercobaan2;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
+
+
+import com.example.win10.bahanpercobaan2.MyGreenDao.AppController;
+import com.example.win10.bahanpercobaan2.TableDb.DaoSession;
+import com.example.win10.bahanpercobaan2.TableDb.Padi;
+import com.example.win10.bahanpercobaan2.TableDb.PadiDao;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Sidebar_Pertanian extends AppCompatActivity {
     // Buat value button
     private RelativeLayout padi;
 
+    /*ListView listView;
+    List<Padi> groceries = new ArrayList<>();
 
+    DaoSession daoSession;
+    ArrayAdapter<Padi> groceryArrayAdapter;*/
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pagepertanian);
+
+        /*listView = (ListView) findViewById(R.id.list_view);
+
+        daoSession = ((AppController) getApplication()).getDaoSession();*/
+
+        /*setupListView();*/
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -32,22 +60,94 @@ public class Sidebar_Pertanian extends AppCompatActivity {
 
         });
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fabsideper);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                bukaTambah();
-            }
-        });
+
     }
 
-    public void bukaTambah(){
-        Intent tambah = new Intent(getApplicationContext(),TambahActivity.class);
-        startActivity(tambah);
-    }
 
     public void openpagepadi() {
         Intent open = new Intent(this, Pertanian_Detailpadi.class);
         startActivity(open);
     }
+
+    /*@Override
+    protected void onResume() {
+        super.onResume();
+
+        fetchGroceryList();
+    }*/
+
+
+    /*private void setupListView() {
+        groceryArrayAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,groceries);
+        listView.setAdapter(groceryArrayAdapter);
+
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+
+                showOptions(position);
+
+                return false;
+            }
+        });
+    }
+
+
+    private void showOptions(int position) {
+        final Padi selectedPadiItem = groceries.get(position);
+
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+
+        String[] options = new String[2];
+
+        options[0] = "Edit " + selectedPadiItem.getPemilik();
+        options[1] = "Delete " + selectedPadiItem.getPemilik();
+
+        alertDialogBuilder.setItems(options, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                if(which == 0){
+                    proceedToUpdateItem(selectedPadiItem);
+                }else if(which == 1){
+                    deleteGroceryItem(selectedPadiItem.getId());
+                }
+
+                dialog.dismiss();
+            }
+        });
+        alertDialogBuilder.create().show();
+    }
+
+
+    private void fetchGroceryList(){
+        groceries.clear();
+        // Get the entity dao we need to work with.
+        PadiDao groceryDao = daoSession.getPadiDao();
+
+        // Load all items
+        groceries.addAll(groceryDao.loadAll());
+
+        // Notify our adapter of changes
+        groceryArrayAdapter.notifyDataSetChanged();
+    }
+
+
+    private void deleteGroceryItem(long id){
+        // Get the entity dao we need to work with.
+        PadiDao groceryDao = daoSession.getPadiDao();
+        // perform delete operation
+        groceryDao.deleteByKey(id);
+
+        fetchGroceryList();
+    }
+
+
+    private void proceedToUpdateItem(Padi grocery){
+        // Pass grocery id to the next screen
+        Intent intent = new Intent(this,TambahDataActivit.class);
+        intent.putExtra("create",false);
+        intent.putExtra("padi", (Serializable) grocery);
+        startActivity(intent);
+    }*/
+
 }

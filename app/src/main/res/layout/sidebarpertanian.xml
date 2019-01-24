@@ -369,13 +369,13 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/tebulol"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginStart="12dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="355dp"
         android:layout_marginEnd="5pt"
-        android:layout_marginBottom="61dp"
         android:background="@color/putih">
 
         <LinearLayout

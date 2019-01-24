@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.NoActionBar"/>
 
-    <include    layout="@layout/detailpadi">
+    <include layout="@layout/detailpadi">
     </include>
 
     <android.support.design.widget.FloatingActionButton
@@ -24,6 +24,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:onClick="addNewItem"
         app:backgroundTint="@color/btnblue"
         android:src="@drawable/ic_playlist_add_white_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
