@@ -42,9 +42,9 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         Log.e("name",padi.getPemilik());
 
-        item.getTgl_tanam().setText(padi.getTgl_tanam());
+        item.getLuas().setText(Integer.toString(padi.getLuaslahan()));
 
-        Log.e("address",padi.getTgl_tanam());
+        Log.e("address", String.valueOf(padi.getLuaslahan()));
 
         /*((ViewHolder) viewHolder).relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override

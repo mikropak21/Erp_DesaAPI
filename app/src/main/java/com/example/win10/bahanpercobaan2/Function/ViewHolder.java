@@ -15,13 +15,13 @@ import java.io.Serializable;
 
 public class ViewHolder extends RecyclerView.ViewHolder {
 
-    TextView pemilik,tgl_tanam;
+    TextView pemilik,luas;
     RelativeLayout relativeLayout;
 
     public ViewHolder(@NonNull View itemView) {
         super(itemView);
         pemilik=itemView.findViewById(R.id.item_name);
-        tgl_tanam = itemView.findViewById(R.id.item_address);
+        luas = itemView.findViewById(R.id.item_address);
         relativeLayout  =   itemView.findViewById(R.id.itemlist);
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,8 +38,8 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         return pemilik;
     }
 
-    public TextView getTgl_tanam(){
-        return tgl_tanam;
+    public TextView getLuas(){
+        return luas;
     }
 
     public RelativeLayout getRelativeLayout()
