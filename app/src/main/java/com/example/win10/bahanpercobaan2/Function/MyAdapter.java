@@ -1,13 +1,17 @@
 package com.example.win10.bahanpercobaan2.Function;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
+import android.widget.Toast;
 
+import com.example.win10.bahanpercobaan2.DetailPemilik;
 import com.example.win10.bahanpercobaan2.R;
 import com.example.win10.bahanpercobaan2.TableDb.Padi;
 
@@ -30,9 +34,9 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
-        ViewHolder item=(ViewHolder) viewHolder;
-        Padi padi=list.get(i);
+    public void onBindViewHolder(@NonNull final RecyclerView.ViewHolder viewHolder, int i) {
+        final ViewHolder item=(ViewHolder) viewHolder;
+        final Padi padi=list.get(i);
 
         item.getPemilik().setText(padi.getPemilik());
 
@@ -41,6 +45,13 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         item.getTgl_tanam().setText(padi.getTgl_tanam());
 
         Log.e("address",padi.getTgl_tanam());
+
+        /*((ViewHolder) viewHolder).relativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context,"You Clicked "+padi.getPemilik(),Toast.LENGTH_LONG).show();
+            }
+        });*/
     }
 
 
@@ -49,4 +60,5 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         return list.size();
     }
+
 }

@@ -10,9 +10,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="25dp"
             android:background="@color/putih"
-            android:id="@+id/pemilik1"
+            android:id="@+id/itemlist"
             >
 
             <LinearLayout
@@ -98,6 +98,7 @@
                     android:layout_toRightOf="@id/titik2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:padding="8dp"
                     />
             </LinearLayout>
