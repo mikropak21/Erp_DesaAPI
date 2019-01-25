@@ -80,11 +80,12 @@
                         android:text=" :"
                         />
                     <TextView
+                        android:id="@+id/formluaslahan"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="10dp"
                         android:textStyle="bold"
-                        android:text="2  ha"
+                        android:text=""
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -103,11 +104,12 @@
                         android:text=" :"
                         />
                     <TextView
+                        android:id="@+id/formtanggal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="10dp"
                         android:textStyle="bold"
-                        android:text="18 November 2017"
+                        android:text=""
                         />
                 </LinearLayout>
                 <LinearLayout

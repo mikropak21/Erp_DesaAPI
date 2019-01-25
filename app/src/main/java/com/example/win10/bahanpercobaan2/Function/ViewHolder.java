@@ -15,7 +15,7 @@ import java.io.Serializable;
 
 public class ViewHolder extends RecyclerView.ViewHolder {
 
-    TextView pemilik,luas;
+    TextView pemilik,luas,tgl_tanam;
     RelativeLayout relativeLayout;
 
     public ViewHolder(@NonNull View itemView) {
@@ -29,6 +29,8 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                 Context context = v.getContext();
                 Intent intent = new Intent(context, DetailPemilik.class);
                 intent.putExtra("pemilik",pemilik.getText().toString());
+                intent.putExtra("luas_lahan",luas.getText().toString());
+                intent.putExtra("tgl_tanam",tgl_tanam.getText().toString());
                 context.startActivity(intent);
             }
         });
@@ -40,6 +42,11 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
     public TextView getLuas(){
         return luas;
+    }
+
+    public TextView getTgl_tanam()
+    {
+        return tgl_tanam;
     }
 
     public RelativeLayout getRelativeLayout()

@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class DetailPemilik extends AppCompatActivity
 {
-    TextView pemilik;
+    TextView pemilik,luas,tgl_tanam;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,9 +21,17 @@ public class DetailPemilik extends AppCompatActivity
 
         pemilik = (TextView)findViewById(R.id.formPemilik);
 
-        String nilaipemilik = result.getExtras().getString("pemilik");
+        tgl_tanam   =   (TextView) findViewById(R.id.formtanggal);
 
+        luas        =   (TextView) findViewById(R.id.formluaslahan);
+
+        String nilailuaslahan   = result.getExtras().getString("luas_lahan");
+        String nilaitgltanam    = result.getExtras().getString("tgl_tanam");
+        String nilaipemilik     = result.getExtras().getString("pemilik");
+
+        tgl_tanam.setText(nilaitgltanam);
         pemilik.setText(nilaipemilik);
+        luas.setText(nilailuaslahan);
 
         Bundle bundle   =   getIntent().getExtras();
         if (bundle  !=  null)
