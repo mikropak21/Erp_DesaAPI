@@ -151,12 +151,13 @@
                         android:text=" :"
                         />
                     <TextView
+                        android:id="@+id/formsiappanen"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="10dp"
                         android:textStyle="bold"
                         android:textColor="@color/green"
-                        android:text="18 Februari 2018"
+                        android:text=""
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -175,11 +176,12 @@
                         android:text=" :"
                         />
                     <TextView
+                        android:id="@+id/formhasilpanen"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="10dp"
                         android:textStyle="bold"
-                        android:text="10-12 ton"
+                        android:text=""
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -198,11 +200,12 @@
                         android:text=" :"
                         />
                     <TextView
+                        android:id="@+id/formjumlahtenagakerja"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="10dp"
                         android:textStyle="bold"
-                        android:text="20 orang"
+                        android:text=""
                         />
                 </LinearLayout>
                 <LinearLayout

@@ -7,31 +7,54 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.win10.bahanpercobaan2.TableDb.Padi;
+import com.example.win10.bahanpercobaan2.TableDb.PadiDao;
+
 public class DetailPemilik extends AppCompatActivity
 {
-    TextView pemilik,luas,tgl_tanam;
+    TextView pemilik,luas,tgl_tanam,tgl_siappanen,hasil_panen,j_pekerja;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Akan menampilkan page/layout pada activity_main4
+        // Akan menampilkan page/layout
         setContentView(R.layout.pagepemilik);
 
+        /**
+         *  Instansi intent agar bisa dipanggil di class ini
+         * */
         Intent result = getIntent();
+        pemilik         = (TextView)findViewById(R.id.formPemilik);
+        luas            =   (TextView) findViewById(R.id.formluaslahan);
+        tgl_tanam       =   (TextView) findViewById(R.id.formtanggal);
+        tgl_siappanen   = (TextView) findViewById(R.id.formsiappanen);
+        hasil_panen     = (TextView) findViewById(R.id.formhasilpanen);
+        j_pekerja       = (TextView) findViewById(R.id.formjumlahtenagakerja);
 
-        pemilik = (TextView)findViewById(R.id.formPemilik);
 
-        tgl_tanam   =   (TextView) findViewById(R.id.formtanggal);
+        /**
+         *  Variable nilai akan mendapatkan isi setelah menerima Key dari intent
+         * */
+        String nilailuaslahan       = result.getExtras().getString("luas_lahan");
+        String nilaipemilik         = result.getExtras().getString("pemilik");
+        String nilaisiappanen       = result.getExtras().getString("tgl_panen");
+        String nilaihasilpanen      = result.getExtras().getString("hasil_panen");
+        String nilaitanggaltanam    = result.getExtras().getString("tgl_tanam");
+        String nilaijmlpekerja      = result.getExtras().getString("jumlah_pekerja");
 
-        luas        =   (TextView) findViewById(R.id.formluaslahan);
-
-        String nilailuaslahan   = result.getExtras().getString("luas_lahan");
-        String nilaitgltanam    = result.getExtras().getString("tgl_tanam");
-        String nilaipemilik     = result.getExtras().getString("pemilik");
-
-        tgl_tanam.setText(nilaitgltanam);
+        /**
+         *  Menampilkan nilai dari id dan variable yang ada, bisa juga kita tambahkan string tambahan
+         * */
+        j_pekerja.setText(nilaijmlpekerja+" Orang");
+        tgl_siappanen.setText(nilaisiappanen);
+        hasil_panen.setText(nilaihasilpanen+ " Ton");
+        tgl_tanam.setText(nilaitanggaltanam);
         pemilik.setText(nilaipemilik);
-        luas.setText(nilailuaslahan);
+        luas.setText(nilailuaslahan+" ha");
+
+
+
 
         Bundle bundle   =   getIntent().getExtras();
         if (bundle  !=  null)

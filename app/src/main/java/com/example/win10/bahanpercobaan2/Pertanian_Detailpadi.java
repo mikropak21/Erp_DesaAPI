@@ -39,11 +39,17 @@ public class Pertanian_Detailpadi extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pagepadi);
         listView   = (RecyclerView)   this.findViewById(R.id.listUser);
+        /**
+         *  Instansi
+         * */
         list=new ArrayList<>();
         adapter=new MyAdapter(list,this);
 
         Toolbar toolbar     =   findViewById(R.id.toolbarpadi);
         setSupportActionBar(toolbar);
+        /**
+         *  Akan membuat action back ke parent atau ke halaman sebelumnya
+         * */
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         daoSession = ((AppController) getApplication()).getDaoSession();
@@ -81,9 +87,17 @@ public class Pertanian_Detailpadi extends AppCompatActivity
         adapter.notifyDataSetChanged();
     }
 
+    /**
+     *  Function yang digunakan untuk menambahkan data
+     * */
     public void addNewItem(View view) {
-        // Go to add item activity
+        /**
+         *  Tujuan perpindahan halaman
+         * */
         Intent intent = new Intent(this,TambahDataActivity.class);
+        /**
+         *  Akan mengirimkan Tambahan data yang akan di terima berdasarkan Namenya
+         * */
         intent.putExtra("create",true);
         startActivity(intent);
     }
