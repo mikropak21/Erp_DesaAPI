@@ -233,8 +233,6 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginStart="10dp"
                         android:background="@color/btnblue"
-                        android:paddingLeft="5dp"
-                        android:paddingTop="3dp"
                         android:text="Lihat Peta"
                         android:textAlignment="center"
                         android:textColor="@color/putih" />

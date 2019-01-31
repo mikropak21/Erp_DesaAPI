@@ -23,8 +23,11 @@
         <activity android:name=".Pertanian_Detailpadi"
             android:parentActivityName=".Sidebar_Pertanian"
             />
-        <activity android:name=".DetailPemilik" />
+        <activity android:name=".DetailPemilik"
+            android:parentActivityName=".Pertanian_Detailpadi"
+            />
         <activity android:name=".TambahDataActivity"></activity>
+        <activity android:name=".DashboardGraph"></activity>
     </application>
 
 </manifest>

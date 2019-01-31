@@ -43,11 +43,11 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         final ViewHolder item=(ViewHolder) viewHolder;
         final Padi padi=list.get(i);
 
-        /** Nampilin Tampilan Nama Pemilik */
+        /** Nampilin Tampilan Nama Pemilik  */
         item.getPemilik().setText(padi.getPemilik());
         Log.e("name",padi.getPemilik());
 
-        /**  Nampilin Tampilan Luas Lahan */
+        /**  Nampilin Tampilan Luas Lahan   */
         item.getLuas().setText(Integer.toString(padi.getLuaslahan()));
         Log.e("luas_lahan", String.valueOf(padi.getLuaslahan()));
 
@@ -59,7 +59,7 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         item.getTgl_panen().setText(padi.getTgl_siappanen());
         Log.e("tgl_panen",padi.getTgl_siappanen());
 
-        /** Nampilin Tampilan Hasil Panen */
+        /** Nampilin Tampilan Hasil Panen   */
         item.getHasil_panen().setText(padi.getHasilpanen());
         Log.e("hasil_panen",padi.getHasilpanen());
 

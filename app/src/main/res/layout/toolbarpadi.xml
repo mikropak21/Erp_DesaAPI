@@ -5,6 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
     android:background="@color/bagtoolbar"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:theme="@style/ThemeOverlay.AppCompat"
     android:elevation="4dp">
 
     <!--<ImageButton

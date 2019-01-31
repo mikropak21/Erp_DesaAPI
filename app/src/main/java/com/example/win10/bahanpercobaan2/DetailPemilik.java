@@ -1,14 +1,18 @@
 package com.example.win10.bahanpercobaan2;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.win10.bahanpercobaan2.TableDb.Padi;
 import com.example.win10.bahanpercobaan2.TableDb.PadiDao;
+
+import java.util.Objects;
 
 public class DetailPemilik extends AppCompatActivity
 {
@@ -20,6 +24,13 @@ public class DetailPemilik extends AppCompatActivity
         super.onCreate(savedInstanceState);
         // Akan menampilkan page/layout
         setContentView(R.layout.pagepemilik);
+
+
+        /**
+         *  Akan membuat action back ke parent atau ke halaman sebelumnya
+         * */
+
+
 
         /**
          *  Instansi intent agar bisa dipanggil di class ini
@@ -43,6 +54,11 @@ public class DetailPemilik extends AppCompatActivity
         String nilaitanggaltanam    = result.getExtras().getString("tgl_tanam");
         String nilaijmlpekerja      = result.getExtras().getString("jumlah_pekerja");
 
+        Toolbar toolbar     =   findViewById(R.id.toolbarpemilik);
+        setSupportActionBar(toolbar);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Padi - "+nilaipemilik);
+        toolbar.setTitleTextColor(Color.WHITE);
         /**
          *  Menampilkan nilai dari id dan variable yang ada, bisa juga kita tambahkan string tambahan
          * */
@@ -52,6 +68,7 @@ public class DetailPemilik extends AppCompatActivity
         tgl_tanam.setText(nilaitanggaltanam);
         pemilik.setText(nilaipemilik);
         luas.setText(nilailuaslahan+" ha");
+
 
 
 

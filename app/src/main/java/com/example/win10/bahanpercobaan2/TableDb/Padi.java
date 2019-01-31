@@ -3,7 +3,6 @@ package com.example.win10.bahanpercobaan2.TableDb;
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Generated;
-import org.greenrobot.greendao.annotation.NotNull;
 
 @Entity
 public class Padi {

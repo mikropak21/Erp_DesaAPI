@@ -1,5 +1,6 @@
 package com.example.win10.bahanpercobaan2;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -10,12 +11,14 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
     View view;
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,11 +89,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Kode di sini akan merespons setelah drawer menutup disini kita biarkan kosong
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    // Mengatur Button Warna setelah di pencet (On Click)
-    public void birutua(View view){
-        view.setBackgroundResource(R.color.bagtoolbar);
     }
 
     @Override
