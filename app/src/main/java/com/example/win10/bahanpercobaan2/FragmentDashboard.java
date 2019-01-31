@@ -89,7 +89,7 @@ public class FragmentDashboard extends Fragment {
         yAxis.setTextSize(12f);
         yAxis.setAxisLineColor(Color.parseColor("#c5c3c3"));
         yAxis.setLabelCount(8,true);
-        //
+
 
         barChart.setDragEnabled(true);
         barChart.setVisibility(3);
