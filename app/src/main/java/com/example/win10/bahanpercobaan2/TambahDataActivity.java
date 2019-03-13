@@ -1,78 +1,81 @@
 package com.example.win10.bahanpercobaan2;
 
-import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-/*import com.example.win10.bahanpercobaan2.Function.Repository;*/
-import com.example.win10.bahanpercobaan2.MyGreenDao.AppController;
-import com.example.win10.bahanpercobaan2.TableDb.DaoMaster;
-import com.example.win10.bahanpercobaan2.TableDb.DaoSession;
-import com.example.win10.bahanpercobaan2.TableDb.Padi;
-import com.example.win10.bahanpercobaan2.TableDb.PadiDao;
+import com.example.win10.bahanpercobaan2.ApiInterface.ApiClient;
+import com.example.win10.bahanpercobaan2.ApiInterface.ApiInterface;
+import com.example.win10.bahanpercobaan2.ApiInterface.CRUDPadi;
 
-import org.greenrobot.greendao.annotation.Id;
-import org.greenrobot.greendao.database.Database;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class TambahDataActivity extends AppCompatActivity {
+    EditText edtluas_lahan, edttgl_tanam, edttgl_siap_panen, edthasil_panen, edtpemilik, edtnik, edtpekerja;
+    Button btInsert, btBack;
+    ApiInterface mApiInterface;
 
-    Button submit;
-    EditText
-            luaslahanpadi,tgl_tanam,tgl_siappanen,hasilpanen,pemilikpadi,nik,j_pekerja;
-
-    DaoSession daoSession;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tambah_data);
+        edtluas_lahan= (EditText) findViewById(R.id.luaslahan);
 
-        submit = (Button) findViewById(R.id.subdata);
+        edttgl_tanam = (EditText) findViewById(R.id.tgl_tanam);
 
-        luaslahanpadi = findViewById(R.id.luaslahan);
+        edttgl_siap_panen= (EditText) findViewById(R.id.tgl_siap);
 
-        tgl_tanam = findViewById(R.id.tgl_tanama);
+        edthasil_panen = (EditText) findViewById(R.id.hasil_panen);
 
-        tgl_siappanen = findViewById(R.id.tgl_siap);
+        edtpemilik= (EditText) findViewById(R.id.nama_pemilik);
 
-        hasilpanen = findViewById(R.id.hasil_panen);
+        edtnik= (EditText) findViewById(R.id.nik);
 
-        pemilikpadi = findViewById(R.id.nama_pemilik);
+        edtpekerja = (EditText) findViewById(R.id.jml_tenaga);
 
-        nik = findViewById(R.id.nik);
-
-        j_pekerja = findViewById(R.id.jml_tenaga);
-
-        daoSession = ((AppController) getApplication()).getDaoSession();
-
-
-        submit.setOnClickListener(
-                new View.OnClickListener() {
+        mApiInterface = ApiClient.getClient().create(ApiInterface.class);
+        btInsert = (Button) findViewById(R.id.subdata);
+        btInsert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Call<CRUDPadi> postPadiCall = mApiInterface.postPadi(
+                        Integer.parseInt(String.valueOf(edtluas_lahan.getText().toString())),
+                        edttgl_tanam.getText().toString(),
+                        edttgl_siap_panen.getText().toString(),
+                        edthasil_panen.getText().toString(),
+                        edtpemilik.getText().toString(),
+                        Integer.parseInt(String.valueOf(edtnik.getText().toString())),
+                        Integer.parseInt(String.valueOf(edtpekerja.getText().toString()))
+                );
+                postPadiCall.enqueue(new Callback<CRUDPadi>() {
                     @Override
-                    public void onClick(View view) {
-                        PadiDao padiDao =   daoSession.getPadiDao();
-                        //create new object
-                        Padi padi=new Padi();
-                        //set value to object attribute
-                        padi.setHasilpanen(hasilpanen.getText().toString().trim());
-                        padi.setPemilik(pemilikpadi.getText().toString().trim());
-                        padi.setLuaslahan(Integer.parseInt(luaslahanpadi.getText().toString()));
-                        padi.setTgl_tanam(tgl_tanam.getText().toString());
-                        padi.setTgl_siappanen(tgl_siappanen.getText().toString());
-                        padi.setNik(Integer.parseInt(nik.getText().toString()));
-                        padi.setJ_pekerja(Integer.parseInt(j_pekerja.getText().toString()));
-                        //insert data to database
-                        padiDao.insert(padi);
-                        Toast.makeText(TambahDataActivity.this,"berhasil memasukkan data",Toast.LENGTH_LONG).show();
-                        //  Membuat aktivity kita kembali ke activity dimana sebelum mau menginput
-                        finish();
+                    public void onResponse(Call<CRUDPadi> call, Response<CRUDPadi> response) {
+                        Toast.makeText(getApplicationContext(), "Berhasil coy", Toast.LENGTH_LONG).show();
+                       /* MainActivity.ma.refresh();
+                        finish();*/
+                    }
+
+                    @Override
+                    public void onFailure(Call<CRUDPadi> call, Throwable t) {
+                        Toast.makeText(getApplicationContext(), "Berhasil coy", Toast.LENGTH_LONG).show();
                     }
                 });
-
-    }
-
+            }
+        });
+//
+//        btBack = (Button) findViewById(R.id.btBackGo);
+//        btBack.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                MainActivity.ma.refresh();
+//                finish();
+//            }
+//        });
+   }
 }

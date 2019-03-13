@@ -1,34 +1,25 @@
 package com.example.win10.bahanpercobaan2;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.EventLogTags;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
-import com.example.win10.bahanpercobaan2.MyGreenDao.AppController;
-import com.example.win10.bahanpercobaan2.TableDb.Padi;
-import com.example.win10.bahanpercobaan2.TableDb.PadiDao;
 import com.github.mikephil.charting.charts.BarChart;
-import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
-import com.github.mikephil.charting.formatter.XAxisValueFormatter;
-import com.github.mikephil.charting.utils.ColorTemplate;
-import com.github.mikephil.charting.utils.ViewPortHandler;
 
 import java.util.ArrayList;
-import java.util.List;
+
+//import com.example.win10.bahanpercobaan2.TableDb.Padi;
+//import com.example.win10.bahanpercobaan2.TableDb.PadiDao;
 
 public class FragmentDashboard extends Fragment {
     @SuppressLint("WrongConstant")

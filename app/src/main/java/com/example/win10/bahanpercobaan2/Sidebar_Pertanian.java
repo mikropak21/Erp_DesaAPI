@@ -1,30 +1,11 @@
 package com.example.win10.bahanpercobaan2;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.RelativeLayout;
-
-
-import com.example.win10.bahanpercobaan2.MyGreenDao.AppController;
-import com.example.win10.bahanpercobaan2.TableDb.DaoSession;
-import com.example.win10.bahanpercobaan2.TableDb.Padi;
-import com.example.win10.bahanpercobaan2.TableDb.PadiDao;
-
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Sidebar_Pertanian extends AppCompatActivity {
     // Buat value button

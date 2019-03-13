@@ -3,47 +3,56 @@ package com.example.win10.bahanpercobaan2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.win10.bahanpercobaan2.Function.MyAdapter;
-import com.example.win10.bahanpercobaan2.MyGreenDao.AppController;
-import com.example.win10.bahanpercobaan2.TableDb.DaoSession;
 import com.example.win10.bahanpercobaan2.TableDb.Padi;
-import com.example.win10.bahanpercobaan2.TableDb.PadiDao;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Pertanian_Detailpadi extends AppCompatActivity
 {
-    /**
-     * RecyclerView = menyimpan sebanyak mungkin tampilan item yang muat di layar
-     * Dan juga Hanya menggunakan tampilan dalam jumlah terbatas yang digunakan kembali saat tampilan tersebut tidak tampak di layar.
-     *
-     * Intinya digunakan untuk menyimpan item ke tampilan
-     * **/
-    RecyclerView listView;
-    /**
-     * Repository   =   Tempatnya menyimpan Fungsion2 buat database(Table user)
-     * */
-    DaoSession  daoSession;
-    List<Padi> list;
-    MyAdapter adapter;
+    RecyclerView recyclerView;
+    RecyclerView.Adapter mAdapter;
+    RecyclerView.LayoutManager layoutManager;
+
+    List<Padi> personUtilsList;
+
+    RequestQueue rq;
+
+    String request_url = "http://192.168.0.193:5000/padi";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pagepadi);
-        listView   = (RecyclerView)   this.findViewById(R.id.listUser);
-        /**
-         *  Instansi
-         * */
-        list=new ArrayList<>();
-        adapter=new MyAdapter(list,this);
+        rq = Volley.newRequestQueue(this);
+
+        recyclerView = (RecyclerView) findViewById(R.id.recycleViewContainer);
+        recyclerView.setHasFixedSize(true);
+
+        layoutManager = new LinearLayoutManager(this);
+
+        recyclerView.setLayoutManager(layoutManager);
+
+        personUtilsList = new ArrayList<>();
+
+        sendRequest();
 
         Toolbar toolbar     =   findViewById(R.id.toolbarpadi);
         setSupportActionBar(toolbar);
@@ -52,44 +61,55 @@ public class Pertanian_Detailpadi extends AppCompatActivity
          * */
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        daoSession = ((AppController) getApplication()).getDaoSession();
-        listView.setLayoutManager(new LinearLayoutManager(this));
-        listView.setHasFixedSize(true);
-        listView.setItemAnimator(new DefaultItemAnimator());
-        listView.setAdapter(adapter);
 
     }
-    public void bukaPemilik(){
 
-        // Memasukan konten dan fungsion yang berapa pada mainactivity3
-        Intent pemilik1 = new Intent(this,DetailPemilik.class);
-        startActivity(pemilik1);
+    public void sendRequest(){
+
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, request_url, null, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+
+                for(int i = 0; i < response.length(); i++){
+
+                    Padi personUtils = new Padi();
+
+                    try {
+                        JSONObject jsonObject = response.getJSONObject(i);
+
+                        personUtils.setId(Integer.valueOf((jsonObject.getString("id"))));
+                        personUtils.setLuas_lahan(Integer.valueOf(jsonObject.getString("luas_lahan")));
+                        personUtils.setTgl_tanam(jsonObject.getString("tgl_tanam"));
+                        personUtils.setTgl_siap_panen(jsonObject.getString("tgl_siap_panen"));
+                        personUtils.setHasil_panen(jsonObject.getString("hasil_panen"));
+                        personUtils.setPemilik(jsonObject.getString("pemilik"));
+                        personUtils.setNik(Integer.valueOf(jsonObject.getString("nik")));
+                        personUtils.setPekerja(Integer.valueOf(jsonObject.getString("pekerja")));
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
+                    personUtilsList.add(personUtils);
+
+                }
+
+                mAdapter = new MyAdapter(personUtilsList);
+
+                recyclerView.setAdapter(mAdapter);
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.i("Volley Error: ", String.valueOf(error));
+            }
+        });
+
+        rq.add(jsonArrayRequest);
+
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        fetchGroceryList();
-    }
-
-
-
-    private void fetchGroceryList(){
-        list.clear();
-        // Get the entity dao we need to work with.
-        PadiDao groceryDao = daoSession.getPadiDao();
-
-        // Load all items
-        list.addAll(groceryDao.loadAll());
-
-        // Notify our adapter of changes
-        adapter.notifyDataSetChanged();
-    }
-
-    /**
-     *  Function yang digunakan untuk menambahkan data
-     * */
     public void addNewItem(View view) {
         /**
          *  Tujuan perpindahan halaman
@@ -101,4 +121,5 @@ public class Pertanian_Detailpadi extends AppCompatActivity
         intent.putExtra("create",true);
         startActivity(intent);
     }
+
 }

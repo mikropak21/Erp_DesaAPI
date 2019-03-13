@@ -1,47 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".TambahDataActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/linear5"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#006064"
-        android:orientation="horizontal">
-        <ImageView
-            android:id="@+id/imageview5"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp"
-            android:background="@android:color/transparent"
-            android:padding="5dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/panahkiri" />
-
-        <TextView
-            android:id="@+id/textview5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:padding="8dp"
-            android:text="Tambah Komoditas"
-            android:textColor="#FFFFFF"
-            android:textSize="12sp" />
-
-
-    </LinearLayout>
+        <include layout="@layout/toolbarinsertdata"/>
 
     <TextView
         android:id="@+id/textview3"
@@ -93,7 +62,7 @@
         android:textSize="10sp"
         android:textColor="#546E7A"/>
     <EditText
-        android:id="@+id/tgl_tanama"
+        android:id="@+id/tgl_tanam"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
@@ -235,4 +204,4 @@ android:textStyle="bold" />
 
     </LinearLayout>
 
-</ScrollView>
+</RelativeLayout>

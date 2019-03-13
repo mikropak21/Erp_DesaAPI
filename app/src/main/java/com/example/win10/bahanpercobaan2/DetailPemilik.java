@@ -5,14 +5,13 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.win10.bahanpercobaan2.TableDb.Padi;
-import com.example.win10.bahanpercobaan2.TableDb.PadiDao;
-
 import java.util.Objects;
+
+//import com.example.win10.bahanpercobaan2.TableDb.Padi;
+//import com.example.win10.bahanpercobaan2.TableDb.PadiDao;
 
 public class DetailPemilik extends AppCompatActivity
 {

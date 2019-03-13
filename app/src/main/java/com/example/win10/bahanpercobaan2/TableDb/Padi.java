@@ -1,120 +1,85 @@
 package com.example.win10.bahanpercobaan2.TableDb;
 
-import org.greenrobot.greendao.annotation.Entity;
-import org.greenrobot.greendao.annotation.Id;
-import org.greenrobot.greendao.annotation.Generated;
-
-@Entity
 public class Padi {
 
-    @Id
-    private Long id;
+    private Integer id;
 
-    private int luaslahan;
+    private Integer luas_lahan;
 
     private String tgl_tanam;
 
-    private String tgl_siappanen;
+    private String tgl_siap_panen;
 
-    private String hasilpanen;
+    private String hasil_panen;
 
     private String pemilik;
 
-    private int nik;
+    private Integer nik;
 
-    private int j_pekerja;
+    private Integer pekerja;
 
-    
-
-
-    @Generated(hash = 471305815)
-    public Padi(Long id, int luaslahan, String tgl_tanam, String tgl_siappanen,
-            String hasilpanen, String pemilik, int nik, int j_pekerja) {
-        this.id = id;
-        this.luaslahan = luaslahan;
-        this.tgl_tanam = tgl_tanam;
-        this.tgl_siappanen = tgl_siappanen;
-        this.hasilpanen = hasilpanen;
-        this.pemilik = pemilik;
-        this.nik = nik;
-        this.j_pekerja = j_pekerja;
-    }
-    @Generated(hash = 434793966)
-    public Padi() {
+    public Integer getId() {
+        return id;
     }
 
-
-
-    public Long getId() {
-        return this.id;
-    }
-
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public int getLuaslahan() {
-        return this.luaslahan;
+    public Integer getLuas_lahan() {
+        return luas_lahan;
     }
 
-    public void setLuaslahan(int luaslahan) {
-        this.luaslahan = luaslahan;
+    public void setLuas_lahan(Integer luas_lahan) {
+        this.luas_lahan = luas_lahan;
     }
 
     public String getTgl_tanam() {
-        return this.tgl_tanam;
+        return tgl_tanam;
     }
 
     public void setTgl_tanam(String tgl_tanam) {
         this.tgl_tanam = tgl_tanam;
-
     }
 
-    public String getTgl_siappanen() {
-        return this.tgl_siappanen;
+    public String getTgl_siap_panen() {
+        return tgl_siap_panen;
     }
 
-    public void setTgl_siappanen(String tgl_siappanen) {
-        this.tgl_siappanen = tgl_siappanen;
+    public void setTgl_siap_panen(String tgl_siap_panen) {
+        this.tgl_siap_panen = tgl_siap_panen;
     }
 
-    public String getHasilpanen() {
-        return this.hasilpanen;
+    public String getHasil_panen() {
+        return hasil_panen;
     }
 
-    public void setHasilpanen(String hasilpanen) {
-        this.hasilpanen = hasilpanen;
+    public void setHasil_panen(String hasil_panen) {
+        this.hasil_panen = hasil_panen;
     }
 
     public String getPemilik() {
         return pemilik;
     }
 
-    public String setPemilik(String pemilik) {
+    public void setPemilik(String pemilik) {
         this.pemilik = pemilik;
-
-        return pemilik;
     }
 
-    public int getNik() {
-        return this.nik;
+    public Integer getNik() {
+        return nik;
     }
 
-    public void setNik(int nik) {
+    public void setNik(Integer nik) {
         this.nik = nik;
-
     }
 
-    public int getJ_pekerja() {
-        return this.j_pekerja;
+    public Integer getPekerja() {
+        return pekerja;
     }
 
-    public void setJ_pekerja(int j_pekerja) {
-        this.j_pekerja = j_pekerja;
-
-    }
-    public void setId(Long id) {
-        this.id = id;
+    public void setPekerja(Integer pekerja) {
+        this.pekerja = pekerja;
     }
 
 }
