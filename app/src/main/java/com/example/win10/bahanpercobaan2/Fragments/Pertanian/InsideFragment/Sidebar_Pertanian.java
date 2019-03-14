@@ -1,4 +1,4 @@
-package com.example.win10.bahanpercobaan2;
+package com.example.win10.bahanpercobaan2.Fragments.Pertanian.InsideFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,15 +7,17 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+import com.example.win10.bahanpercobaan2.R;
+
 public class Sidebar_Pertanian extends AppCompatActivity {
     // Buat value button
     private RelativeLayout padi;
 
     /*ListView listView;
-    List<Padi> groceries = new ArrayList<>();
+    List<DbPadi> groceries = new ArrayList<>();
 
     DaoSession daoSession;
-    ArrayAdapter<Padi> groceryArrayAdapter;*/
+    ArrayAdapter<DbPadi> groceryArrayAdapter;*/
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,7 +77,7 @@ public class Sidebar_Pertanian extends AppCompatActivity {
 
 
     private void showOptions(int position) {
-        final Padi selectedPadiItem = groceries.get(position);
+        final DbPadi selectedPadiItem = groceries.get(position);
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
 
@@ -123,7 +125,7 @@ public class Sidebar_Pertanian extends AppCompatActivity {
     }
 
 
-    private void proceedToUpdateItem(Padi grocery){
+    private void proceedToUpdateItem(DbPadi grocery){
         // Pass grocery id to the next screen
         Intent intent = new Intent(this,TambahDataActivit.class);
         intent.putExtra("create",false);

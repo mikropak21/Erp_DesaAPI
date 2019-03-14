@@ -1,4 +1,4 @@
-package com.example.win10.bahanpercobaan2;
+package com.example.win10.bahanpercobaan2.Fragments.Dashboard;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.win10.bahanpercobaan2.R;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
@@ -18,7 +19,7 @@ import com.github.mikephil.charting.data.BarEntry;
 
 import java.util.ArrayList;
 
-//import com.example.win10.bahanpercobaan2.TableDb.Padi;
+//import com.example.win10.bahanpercobaan2.TableDb.DbPadi;
 //import com.example.win10.bahanpercobaan2.TableDb.PadiDao;
 
 public class FragmentDashboard extends Fragment {
@@ -29,7 +30,7 @@ public class FragmentDashboard extends Fragment {
         View view = inflater.inflate(R.layout.sidebardashboard, container, false);
         BarChart barChart = (BarChart) view.findViewById(R.id.chart);
 
-       /* Padi padi   =   new Padi();
+       /* DbPadi padi   =   new DbPadi();
         int luas    =  padi.getLuaslahan();*/
 
 

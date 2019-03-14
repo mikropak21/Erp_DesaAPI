@@ -20,16 +20,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Sidebar_Pertanian" />
-        <activity android:name=".Pertanian_Detailpadi"
-            android:parentActivityName=".Sidebar_Pertanian"
+        <activity android:name=".Fragments.Pertanian.InsideFragment.Sidebar_Pertanian" />
+        <activity android:name=".Fragments.Pertanian.InsideFragment.Pertanian_Detailpadi"
+            android:parentActivityName=".Fragments.Pertanian.InsideFragment.Sidebar_Pertanian"
             />
-        <activity android:name=".DetailPemilik"
-            android:parentActivityName=".Pertanian_Detailpadi"
+        <activity android:name=".Fragments.Pertanian.InsideFragment.DetailPemilik"
+            android:parentActivityName=".Fragments.Pertanian.InsideFragment.Pertanian_Detailpadi"
             />
-        <activity android:name=".TambahDataActivity"></activity>
-        <activity android:name=".DashboardGraph"></activity>
-        <activity android:name=".EditDataPadi.EditActivity"/>
+        <activity android:name=".CrudPadi.Insert.InsertActivity"></activity>
+        <activity android:name=".CrudPadi.Edit.EditActivity"/>
     </application>
 
 </manifest>

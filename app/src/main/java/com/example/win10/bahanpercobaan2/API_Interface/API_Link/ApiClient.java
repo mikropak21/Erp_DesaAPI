@@ -1,4 +1,4 @@
-package com.example.win10.bahanpercobaan2.ApiInterface;
+package com.example.win10.bahanpercobaan2.API_Interface.API_Link;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

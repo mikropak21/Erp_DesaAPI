@@ -1,6 +1,6 @@
-package com.example.win10.bahanpercobaan2.TableDb;
+package com.example.win10.bahanpercobaan2.Model;
 
-public class Padi {
+public class DbPadi {
 
     private Integer id;
 

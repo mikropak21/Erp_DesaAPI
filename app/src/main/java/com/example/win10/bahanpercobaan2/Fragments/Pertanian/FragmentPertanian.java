@@ -1,4 +1,4 @@
-package com.example.win10.bahanpercobaan2;
+package com.example.win10.bahanpercobaan2.Fragments.Pertanian;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
-import android.widget.Toolbar;
+
+import com.example.win10.bahanpercobaan2.CrudPadi.Insert.InsertActivity;
+import com.example.win10.bahanpercobaan2.Fragments.Pertanian.InsideFragment.Pertanian_Detailpadi;
+import com.example.win10.bahanpercobaan2.R;
 
 public class FragmentPertanian extends Fragment {
 
@@ -31,7 +34,7 @@ public class FragmentPertanian extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent tambah = new Intent(getActivity(), TambahDataActivity.class);
+                Intent tambah = new Intent(getActivity(), InsertActivity.class);
                 tambah.putExtra("create",true);
                 startActivity(tambah);
             }

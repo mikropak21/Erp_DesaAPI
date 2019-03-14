@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Sidebar_Pertanian">
+    tools:context=".Fragments.Pertanian.InsideFragment.Sidebar_Pertanian">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

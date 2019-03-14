@@ -1,4 +1,4 @@
-package com.example.win10.bahanpercobaan2.EditDataPadi;
+package com.example.win10.bahanpercobaan2.CrudPadi.Edit;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,9 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.win10.bahanpercobaan2.ApiInterface.ApiClient;
-import com.example.win10.bahanpercobaan2.ApiInterface.ApiInterface;
-import com.example.win10.bahanpercobaan2.ApiInterface.CRUDPadi;
+import com.example.win10.bahanpercobaan2.API_Interface.API_Link.ApiClient;
+import com.example.win10.bahanpercobaan2.API_Interface.API_CRUD.ApiInterface;
+import com.example.win10.bahanpercobaan2.API_Interface.API_CRUD.CRUDPadi;
 import com.example.win10.bahanpercobaan2.R;
 
 import retrofit2.Call;

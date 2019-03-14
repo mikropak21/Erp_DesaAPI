@@ -1,4 +1,4 @@
-package com.example.win10.bahanpercobaan2.Function;
+package com.example.win10.bahanpercobaan2.Adapter.AdapterPadi;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,19 +11,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.win10.bahanpercobaan2.DetailPemilik;
-import com.example.win10.bahanpercobaan2.EditDataPadi.EditActivity;
+import com.example.win10.bahanpercobaan2.CrudPadi.Edit.EditActivity;
+import com.example.win10.bahanpercobaan2.Fragments.Pertanian.InsideFragment.DetailPemilik;
+import com.example.win10.bahanpercobaan2.Model.DbPadi;
 import com.example.win10.bahanpercobaan2.R;
-import com.example.win10.bahanpercobaan2.TableDb.Padi;
-import com.example.win10.bahanpercobaan2.TambahDataActivity;
 
 import java.util.List;
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
-    private List<Padi> personUtils;
+public class MyAdapterPadi extends RecyclerView.Adapter<MyAdapterPadi.ViewHolder> {
+    private List<DbPadi> personUtils;
     private Context context;
 
-    public MyAdapter(List personUtils) {
+    public MyAdapterPadi(List personUtils) {
         this.personUtils = personUtils;
     }
 
@@ -97,7 +96,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 @Override
                 public boolean onLongClick(View view) {
                     showAlertDialogButtonClicked();
-////                    Padi cpu = (Padi) view.getTag();
+////                    DbPadi cpu = (DbPadi) view.getTag();
 ////
 ////                    Toast.makeText(view.getContext(), cpu.getPemilik()+" is "+ cpu.getLuas_lahan(), Toast.LENGTH_SHORT).show();
 //
@@ -137,18 +136,18 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 }
             });
 
-            alert.setNegativeButton("Delete", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    Intent intent = new Intent(context,TambahDataActivity.class);
-                    /**
-                     *  Akan mengirimkan Tambahan data yang akan di terima berdasarkan Namenya
-                     * */
-                    intent.putExtra("pemilik", mTextPemilik.getText().toString());
-                    intent.putExtra("create",true);
-                    context.startActivity(intent);
-                }
-            });
+//            alert.setNegativeButton("Delete", new DialogInterface.OnClickListener() {
+//                @Override
+//                public void onClick(DialogInterface dialog, int which) {
+//                    Intent intent = new Intent(context,InsertActivity.class);
+//                    /**
+//                     *  Akan mengirimkan Tambahan data yang akan di terima berdasarkan Namenya
+//                     * */
+//                    intent.putExtra("pemilik", mTextPemilik.getText().toString());
+//                    intent.putExtra("create",true);
+//                    context.startActivity(intent);
+//                }
+//            });
 
             // create and show the alert dialog
             AlertDialog dialog = alert.create();
@@ -157,7 +156,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     }
 //    private void proceedtoUpdate(View v) {
 //        Context context = v.getContext();
-//        Intent intent = new Intent(context,TambahDataActivity.class);
+//        Intent intent = new Intent(context,InsertActivity.class);
 //        /**
 //         *  Akan mengirimkan Tambahan data yang akan di terima berdasarkan Namenya
 //         * */

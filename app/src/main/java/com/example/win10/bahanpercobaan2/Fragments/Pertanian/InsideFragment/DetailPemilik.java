@@ -1,4 +1,4 @@
-package com.example.win10.bahanpercobaan2;
+package com.example.win10.bahanpercobaan2.Fragments.Pertanian.InsideFragment;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -8,9 +8,11 @@ import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.win10.bahanpercobaan2.R;
+
 import java.util.Objects;
 
-//import com.example.win10.bahanpercobaan2.TableDb.Padi;
+//import com.example.win10.bahanpercobaan2.TableDb.DbPadi;
 //import com.example.win10.bahanpercobaan2.TableDb.PadiDao;
 
 public class DetailPemilik extends AppCompatActivity
@@ -63,7 +65,7 @@ public class DetailPemilik extends AppCompatActivity
          * */
         j_pekerja.setText(nilaijmlpekerja+" Orang");
         tgl_siappanen.setText(nilaisiappanen);
-        hasil_panen.setText(nilaihasilpanen+ " Ton");
+        hasil_panen.setText(nilaihasilpanen+ " Juta Ton");
         tgl_tanam.setText(nilaitanggaltanam);
         pemilik.setText(nilaipemilik);
         luas.setText(nilailuaslahan+" ha");

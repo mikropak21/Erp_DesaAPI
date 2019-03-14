@@ -1,4 +1,4 @@
-package com.example.win10.bahanpercobaan2;
+package com.example.win10.bahanpercobaan2.CrudPadi.Insert;
 
 
 import android.os.Bundle;
@@ -8,15 +8,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.win10.bahanpercobaan2.ApiInterface.ApiClient;
-import com.example.win10.bahanpercobaan2.ApiInterface.ApiInterface;
-import com.example.win10.bahanpercobaan2.ApiInterface.CRUDPadi;
+import com.example.win10.bahanpercobaan2.API_Interface.API_Link.ApiClient;
+import com.example.win10.bahanpercobaan2.API_Interface.API_CRUD.ApiInterface;
+import com.example.win10.bahanpercobaan2.API_Interface.API_CRUD.CRUDPadi;
+import com.example.win10.bahanpercobaan2.R;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class TambahDataActivity extends AppCompatActivity {
+public class InsertActivity extends AppCompatActivity {
     EditText edtluas_lahan, edttgl_tanam, edttgl_siap_panen, edthasil_panen, edtpemilik, edtnik, edtpekerja;
     Button btInsert, btBack;
     ApiInterface mApiInterface;

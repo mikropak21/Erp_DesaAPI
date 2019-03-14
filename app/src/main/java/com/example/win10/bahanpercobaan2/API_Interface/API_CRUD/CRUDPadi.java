@@ -1,6 +1,6 @@
-package com.example.win10.bahanpercobaan2.ApiInterface;
+package com.example.win10.bahanpercobaan2.API_Interface.API_CRUD;
 
-import com.example.win10.bahanpercobaan2.TableDb.Padi;
+import com.example.win10.bahanpercobaan2.Model.DbPadi;
 import com.google.gson.annotations.SerializedName;
 
 /**
@@ -11,7 +11,7 @@ public class CRUDPadi {
     @SerializedName("status")
     String status;
     @SerializedName("result")
-    Padi mPadi;
+    DbPadi mDbPadi;
     @SerializedName("message")
     String message;
     public String getStatus() {
@@ -26,11 +26,11 @@ public class CRUDPadi {
     public void setMessage(String message) {
         this.message = message;
     }
-    public Padi getPadi() {
-        return mPadi;
+    public DbPadi getPadi() {
+        return mDbPadi;
     }
-    public void setPadi(Padi Padi) {
-        mPadi = Padi;
+    public void setPadi(DbPadi DbPadi) {
+        mDbPadi = DbPadi;
     }
 
 }

@@ -1,4 +1,4 @@
-package com.example.win10.bahanpercobaan2;
+package com.example.win10.bahanpercobaan2.Fragments.Pertanian.InsideFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,8 +15,10 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.win10.bahanpercobaan2.Function.MyAdapter;
-import com.example.win10.bahanpercobaan2.TableDb.Padi;
+import com.example.win10.bahanpercobaan2.Adapter.AdapterPadi.MyAdapterPadi;
+import com.example.win10.bahanpercobaan2.CrudPadi.Insert.InsertActivity;
+import com.example.win10.bahanpercobaan2.Model.DbPadi;
+import com.example.win10.bahanpercobaan2.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,7 +33,7 @@ public class Pertanian_Detailpadi extends AppCompatActivity
     RecyclerView.Adapter mAdapter;
     RecyclerView.LayoutManager layoutManager;
 
-    List<Padi> personUtilsList;
+    List<DbPadi> personUtilsList;
 
     RequestQueue rq;
 
@@ -72,7 +74,7 @@ public class Pertanian_Detailpadi extends AppCompatActivity
 
                 for(int i = 0; i < response.length(); i++){
 
-                    Padi personUtils = new Padi();
+                    DbPadi personUtils = new DbPadi();
 
                     try {
                         JSONObject jsonObject = response.getJSONObject(i);
@@ -94,7 +96,7 @@ public class Pertanian_Detailpadi extends AppCompatActivity
 
                 }
 
-                mAdapter = new MyAdapter(personUtilsList);
+                mAdapter = new MyAdapterPadi(personUtilsList);
 
                 recyclerView.setAdapter(mAdapter);
 
@@ -114,7 +116,7 @@ public class Pertanian_Detailpadi extends AppCompatActivity
         /**
          *  Tujuan perpindahan halaman
          * */
-        Intent intent = new Intent(this,TambahDataActivity.class);
+        Intent intent = new Intent(this,InsertActivity.class);
         /**
          *  Akan mengirimkan Tambahan data yang akan di terima berdasarkan Namenya
          * */
