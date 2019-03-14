@@ -1,0 +1,203 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:2:1-34:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\8b047ce4543b5b130602d821bb23fb1f\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\943167004651eb297477978ca503c2c1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\017b566cb3b88f8cda24fb449d05d0fe\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\dd8eaa3a42a371c0c8946f8dc5929dda\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f178739470b89fbafaf58a48532a20c7\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\9e4daaec440ad7a613bbf4b763233706\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\4cde6dcc4a298a07a402d98fdb2726d4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\d2bb30ced2717bebd29d5af0cf71adf8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\83b4397e0f9ae2879f46ecfa1976b8e9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\e7d3fe3381d9ac11ee6277df3e90c0e6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\0796464d4266ab44fdaea9a2ef3e0498\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\b2513f30cf989c6884ef28943ffe129a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\f44f25799d683a2e9187ba0a974eb9a3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\6ca75338e1dc12c5abb59d56618959bf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\14ac5b37880a4697d4e2f747f9ab30d8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\0d75216257bf43cac9cd1be9ea353c86\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\387109e6f8d4e139325c01713640b564\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\3fda795a1afaf8e78fdeacfb8af61bc6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\0fc92b769eb66374c15c00bc5d8b96e4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fbbd356d63aee00c918cf2d88d5516ed\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\e615b5a906415a4516976ded4295c899\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\2d6f7d479f4bed7878a59c1f6117ff67\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\5563f4f8d91298db7109c95ad6de678f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\00d20bd45b5e1bd689f34873ddd4620c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\bfcec77314758d403a708e0e36ccb4ef\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\0908edf3f5c51ba798d2b5c979af5b3b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\36c0fab659837f654f79bcaa236fdc95\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\dd8d06381311e22fb81c7a377bff11d6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\ef2ce5dcb8ddcf9ea5067d8130c4dfc8\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\c6d9aa259bec8e800eda9fae44473a9a\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\438c8b905f393244252df6888f56aa94\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\56f6b6336082fdf9f10f6f6fa286c081\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:2:1-34:12
+	package
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:3:5-48
+		INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:2:1-34:12
+		INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:2:1-34:12
+		INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:5:22-64
+application
+ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:7:5-32:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\8b047ce4543b5b130602d821bb23fb1f\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\8b047ce4543b5b130602d821bb23fb1f\AndroidManifest.xml:22:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\dd8eaa3a42a371c0c8946f8dc5929dda\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\dd8eaa3a42a371c0c8946f8dc5929dda\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f178739470b89fbafaf58a48532a20c7\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f178739470b89fbafaf58a48532a20c7\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fbbd356d63aee00c918cf2d88d5516ed\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fbbd356d63aee00c918cf2d88d5516ed\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\e615b5a906415a4516976ded4295c899\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\e615b5a906415a4516976ded4295c899\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fbbd356d63aee00c918cf2d88d5516ed\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:13:9-40
+activity#com.example.win10.bahanpercobaan2.MainActivity
+ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:14:9-22:20
+	android:theme
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:16:13-56
+	android:name
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:15:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:20:27-74
+activity#com.example.win10.bahanpercobaan2.Fragments.Pertanian.InsideFragment.Sidebar_Pertanian
+ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:23:9-90
+	android:name
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:23:19-87
+activity#com.example.win10.bahanpercobaan2.Fragments.Pertanian.InsideFragment.Pertanian_Detailpadi
+ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:24:9-26:15
+	android:parentActivityName
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:25:13-95
+	android:name
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:24:19-90
+activity#com.example.win10.bahanpercobaan2.Fragments.Pertanian.InsideFragment.DetailPemilik
+ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:27:9-29:15
+	android:parentActivityName
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:28:13-98
+	android:name
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:27:19-83
+activity#com.example.win10.bahanpercobaan2.CrudPadi.Insert.InsertActivity
+ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:30:9-77
+	android:name
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:30:19-65
+activity#com.example.win10.bahanpercobaan2.CrudPadi.Edit.EditActivity
+ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:31:9-63
+	android:name
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml:31:19-61
+uses-sdk
+INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\8b047ce4543b5b130602d821bb23fb1f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\8b047ce4543b5b130602d821bb23fb1f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\943167004651eb297477978ca503c2c1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\943167004651eb297477978ca503c2c1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\017b566cb3b88f8cda24fb449d05d0fe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\017b566cb3b88f8cda24fb449d05d0fe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\dd8eaa3a42a371c0c8946f8dc5929dda\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\dd8eaa3a42a371c0c8946f8dc5929dda\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f178739470b89fbafaf58a48532a20c7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f178739470b89fbafaf58a48532a20c7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\9e4daaec440ad7a613bbf4b763233706\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\9e4daaec440ad7a613bbf4b763233706\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\4cde6dcc4a298a07a402d98fdb2726d4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\4cde6dcc4a298a07a402d98fdb2726d4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\d2bb30ced2717bebd29d5af0cf71adf8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\d2bb30ced2717bebd29d5af0cf71adf8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\83b4397e0f9ae2879f46ecfa1976b8e9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\83b4397e0f9ae2879f46ecfa1976b8e9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\e7d3fe3381d9ac11ee6277df3e90c0e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\e7d3fe3381d9ac11ee6277df3e90c0e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\0796464d4266ab44fdaea9a2ef3e0498\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\0796464d4266ab44fdaea9a2ef3e0498\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\b2513f30cf989c6884ef28943ffe129a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\b2513f30cf989c6884ef28943ffe129a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\f44f25799d683a2e9187ba0a974eb9a3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\f44f25799d683a2e9187ba0a974eb9a3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\6ca75338e1dc12c5abb59d56618959bf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\6ca75338e1dc12c5abb59d56618959bf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\14ac5b37880a4697d4e2f747f9ab30d8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\14ac5b37880a4697d4e2f747f9ab30d8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\0d75216257bf43cac9cd1be9ea353c86\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\0d75216257bf43cac9cd1be9ea353c86\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\387109e6f8d4e139325c01713640b564\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\387109e6f8d4e139325c01713640b564\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\3fda795a1afaf8e78fdeacfb8af61bc6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\3fda795a1afaf8e78fdeacfb8af61bc6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\0fc92b769eb66374c15c00bc5d8b96e4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\0fc92b769eb66374c15c00bc5d8b96e4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fbbd356d63aee00c918cf2d88d5516ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fbbd356d63aee00c918cf2d88d5516ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\e615b5a906415a4516976ded4295c899\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\e615b5a906415a4516976ded4295c899\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\2d6f7d479f4bed7878a59c1f6117ff67\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\2d6f7d479f4bed7878a59c1f6117ff67\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\5563f4f8d91298db7109c95ad6de678f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\5563f4f8d91298db7109c95ad6de678f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\00d20bd45b5e1bd689f34873ddd4620c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\00d20bd45b5e1bd689f34873ddd4620c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\bfcec77314758d403a708e0e36ccb4ef\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\bfcec77314758d403a708e0e36ccb4ef\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\0908edf3f5c51ba798d2b5c979af5b3b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\0908edf3f5c51ba798d2b5c979af5b3b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\36c0fab659837f654f79bcaa236fdc95\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\36c0fab659837f654f79bcaa236fdc95\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\dd8d06381311e22fb81c7a377bff11d6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\dd8d06381311e22fb81c7a377bff11d6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\ef2ce5dcb8ddcf9ea5067d8130c4dfc8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\ef2ce5dcb8ddcf9ea5067d8130c4dfc8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\c6d9aa259bec8e800eda9fae44473a9a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\c6d9aa259bec8e800eda9fae44473a9a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\438c8b905f393244252df6888f56aa94\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\438c8b905f393244252df6888f56aa94\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\56f6b6336082fdf9f10f6f6fa286c081\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\WIN 10\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\56f6b6336082fdf9f10f6f6fa286c081\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\WIN 10\AndroidStudioProjects\erp-desa\app\src\main\AndroidManifest.xml

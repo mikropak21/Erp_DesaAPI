@@ -1,0 +1,7 @@
+#Thu Mar 14 13:17:35 ICT 2019
+base.0=C\:\\Users\\WIN 10\\AndroidStudioProjects\\erp-desa\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=C\:\\Users\\WIN 10\\AndroidStudioProjects\\erp-desa\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
